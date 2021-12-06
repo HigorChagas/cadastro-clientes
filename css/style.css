@@ -90,8 +90,14 @@ input[type="submit"] {
     color: #FFF;
     border: none;
     border-radius: 20px;
-    height: 20px;
+    height: 34px;
     cursor: pointer;
+    transition: 500ms;
+}
+
+input[type="submit"]:hover {
+    background-color: #c3026f;
+    transition: 500ms ease-in-out;
 }
 
 #agreement {
@@ -101,4 +107,19 @@ input[type="submit"] {
 #agreement, #agreement-label {
     display: inline-block;
     width: auto;
+}
+
+/* ===============================================
+2. Validações
+=================================================*/
+
+.error-validation {
+    color: #FF1A1A;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
 }
